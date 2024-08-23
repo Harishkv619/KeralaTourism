@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 65px;
+}
+
+.nav-item{
+    margin-right: 15px;
+}
+
+.contact{
+    animation-name: slideup;
+    animation-duration: 2s;
+}
+
+@keyframes slideup{
+    from{transform: translateY(70%)}
+}
+
+.carousel-item{
+    box-shadow: 0px 1px 5px grey;
+    transition: all ease-in-out 0.3s;
+}
+
+.carousel-item:hover{
+    box-shadow: 0px 8px 30px black;
+    width: 101%;
+}
+
+.carousel-caption{
+    top: 0;
+    margin-top: 250px;
+}
+
+.carousel-caption h4{
+    color: green;
+    padding-bottom: 15px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.carousel-caption button{
+    border-radius: 0;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+.carousel-caption button:hover{
+    transform: scale(1.15);
+}
+
+#Districts{
+    background-color: #C1D8C3;
+    padding-bottom: 8px;
+}
+
+#Districts .card-group{
+    margin-bottom: 5px;
+}
+
+#Districts .card img{
+    height: 300px; 
+}
+
+#Districts .card img:hover{
+    box-shadow: 0px 8px 30px black;
+    width: 101%;
+}
+
+#Districts .card .card-title:hover{
+    text-align: center;
+    transform: scale(1.15);
+}
+
+fieldset{
+    box-shadow: 0px 1px 5px grey;
+    transition: all ease-in-out 0.3s;
+}
+
+legend{
+    text-shadow: 2px 2px 4px #FF0000;
+}
+
+fieldset .btn{
+    border-radius: 0;
+    border: 0;
+    padding: 9px 20px;
+    font-weight: 600;
+}
+
+fieldset .btn:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+}

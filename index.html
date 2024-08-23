@@ -4,51 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerala Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <header>
-            <div>
-                <img src="./images/kerala-tourism-logo.jpg" alt="kerala tourism logo" height="180px">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#Districts">Districts</a></li>
-                    <li><button>Login</button></li>
-                    <li><button>Sign Up</button></li>
-                </ul>
+            <section class="main text-light bg-info">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-12 col-md-6">
+                            <img src="./images/kerala-tourism-logo.png" alt="kerala tourism logo" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h1>Welcome To God's Own Country</h1>
+                            <p class="lead">Kerala Tourism</p>
+                            <button class="btn btn-primary">Plan Your Trip</button>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+            
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Kerala Tourism</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Districts</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn btn-info text-light"  href="#">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn btn-success" href="#">Sign Up</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
+
         </header>
-        <section>
+
+        <section class="contact text-center my-5">
             <!--  -->
             <h1>COME AND ENJOY OUR CULTURE</h1>
-            <a href="">Learn More</a>
-            <a href="">Contact Us</a>
+            <a href="#" style="color: green; margin-right: 10px;">Learn More</a>
+            <a href="#" style="color: coral;">Contact Us</a>
         </section>
+
     </main>
     <hr>
+
     <section>
         <!-- 4 destinations -->
-        <h1>Top Destinations</h1>
-        <article>
-            <img src="./images/bekal-fort.jpg" alt="Bekal Fort" height="600px" width="900px">
-            <p>Bekal Fort</p>
-        </article>
-        <article>
-            <img src="./images/parassinikadavu-muthappan-temple.jpg" alt="Parassinikadavu Muthappan Temple" height="600px" width="900px">
-            <p>Parassinikadavu Muthappan Temple</p>
-        </article>
-        <article>
-            <img src="./images/kottiyoor-mahadeva-temple.jpg" alt="Kottiyoor Mahadeva Temple" height="600px" width="900px">
-            <p>Kottiyoor Mahadeva Temple</p>
-        </article>
-        <article>
-            <img src="./images/Periyar-Wildlife-Sanctuary.jpg" alt="Periyar" height="600px" width="900px">
-            <p>Periyar</p>
-        </article>
+
+        <h1 style="text-align: center; color: white; background-color: green;">TOP DESTINATION</h1>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="2s">
+                <img src="./images/bekal-fort.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>BEKAL FORT</h4>
+                  <button class="btn btn-primary">Book a Tour</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="1s">
+                <img src="./images/parassinikadavu-muthappan-temple.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>PARASSINIKADAVU MUTHAPPAN TEMPLE</h4>
+                    <button class="btn btn-primary">Book a Tour</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="1s">
+                <img src="./images/kottiyoor-mahadeva-temple.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>KOTTIYOOR MAHADEVA TEMPLE</h4>
+                    <button class="btn btn-primary">Book a Tour</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="1s">
+                <img src="./images/Periyar-Wildlife-Sanctuary.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>PERIYAR</h4>
+                    <button class="btn btn-primary">Book a Tour</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
+    
     <hr>
     <section>
         <h1>About Kerala</h1>
@@ -63,6 +131,7 @@
             Kerala has lots of renowned festivals. Be it the state festival Onam or the temple festival Pooram the people in God's own country celebrates all the festivals with great passion and spirit.
             Kerala is the land of Ayurveda which is a unique and indispensable branch of medicine. Ayurveda not only refreshes your body but also refreshes your soul. For getting Ayurvedic treatment the period between April to August is considered as the best time.</p>
     </section>
+    
     <section id="Districts">
         <h1>Districts</h1>
         <ol>
@@ -81,41 +150,151 @@
             <li><a href="#">Thrissur</a></li>
             <li><a href="#">Wayanad</a></li>
         </ol>
+        <div class="card-group">
+            <div class="card">
+              <img src="./images/alappuzha.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Alappuzha</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/ernakulam.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ernakulam</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/idduki.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Idukki</h5>
+              </div>
+            </div>
+            <div class="card">
+                <img src="./images/kannur.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kannur</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/kasaragod.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kasaragod</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/kollam.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kollam</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/kottayam.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kottayam</h5>
+                </div>
+              </div>
+            </div>  
+
+              <div class="card-group">
+              <div class="card">
+                <img src="./images/kozhikode.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kozhikode</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/malappuram.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Malappuram</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/palakkad.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Palakkad</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/pathanamthitta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pathanamthitta</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/Thiruvananthapuram.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Thiruvananthapuram</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/thrissur.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Thrissur</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/wayanad.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Wayanad</h5>
+                </div>
+              </div>
+          </div>
     </section>
-    <fieldset>
-        <legend>Contact Us</legend>
+
+    <section class="bg-light">
+      <div class="container">
         <form action="#">
-            <label for="name">Name </label>
-            <input type="text" name="name" id="name" required pattern="[A-Za-z/s]" title="Name should be written.">
-            <br>
-            <label for="email">Email </label>
-            <input type="email" name="email" id="email" required>
-            <br>
-            <label for="phone">Phone</label>
-            <input type="number" name="number" id="number" required >
-            <br>
-            <select name="district" id="district" required>
-                <option value="">Select District</option>
-                <option value="">Alappuzha</option>
-                <option value="">Ernakulam</option>
-                <option value="">Idukki</option>
-                <option value="">Kannur</option>
-                <option value="">Kasargod</option>
-                <option value="">Kollam</option>
-                <option value="">Kottayam</option>
-                <option value="">Kozhikode</option>
-                <option value="">Malappuram</option>
-                <option value="">Palakkad</option>
-                <option value="">Pathanamthitta</option>
-                <option value="">Thiruvananthapuram</option>
-                <option value="">Thrissur</option>
-                <option value="">Wayanad</option>
-            </select>
-            <button type="submit">submit</button>
+          <fieldset class="border p-3">
+            <legend class="float-none w-auto">Contact Us</legend>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name </label>
+                <input type="text" class="form-control" name="name" id="name" required pattern="[A-Za-z/s]" title="Name should be written.">
+              </div>
+              <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name </label>
+                <input type="text" class="form-control" name="name" id="name" required pattern="[A-Za-z/s]" title="Name should be written.">
+              </div>  
+              <div class="col-md-7">
+                <label for="email" class="form-label">Email </label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+              <div class="col-md-5">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="number" class="form-control" name="number" id="number" required >
+              </div>
+              <div class="col-md-6">
+                <select name="district" class="form-select" id="district" required>
+                  <option value="">Select District</option>
+                  <option value="">Alappuzha</option>
+                  <option value="">Ernakulam</option>
+                  <option value="">Idukki</option>
+                  <option value="">Kannur</option>
+                  <option value="">Kasargod</option>
+                  <option value="">Kollam</option>
+                  <option value="">Kottayam</option>
+                  <option value="">Kozhikode</option>
+                  <option value="">Malappuram</option>
+                  <option value="">Palakkad</option>
+                  <option value="">Pathanamthitta</option>
+                  <option value="">Thiruvananthapuram</option>
+                  <option value="">Thrissur</option>
+                  <option value="">Wayanad</option>
+                </select>
+              </div>
+              <div class="col-md-6"> 
+                <button type="submit" class="btn btn-primary">submit</button>
+              </div>
+            </div>
+          </fieldset>
         </form>
-    </fieldset>
+      </div> 
+    </section>
+
     <footer>
         <h5>Copyright@2024</h5>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
